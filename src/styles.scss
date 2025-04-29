@@ -240,7 +240,7 @@ a.text-main:hover {
     background-color: var(--bs-light-bg-subtle);
 }
 
-.btn-icon .material-symbols-rounded {
+.btn-icon i {
     font-size: 1.1rem !important;
     line-height: 1.1 !important;
     overflow: unset;
@@ -256,41 +256,22 @@ a.text-main:hover {
     width: 30px !important;
     min-width: 30px !important;
     height: 30px !important;
-    padding: 7px !important;
+    padding: 3px !important;
     // background-color: var(--bs-light-bg-subtle) !important;
 }
 
-.btn-icon-sm .material-symbols-rounded {
+.btn-icon-sm i {
     font-size: 0.95rem !important;
-    line-height: 1.2 !important;
     overflow: unset;
     margin: 0 !important;
 }
 
-.btn-default-sm .material-symbols-rounded {
+.btn-default-sm i {
     font-size: 1rem !important;
     line-height: 1.2 !important;
     overflow: unset;
     margin-right: 5px !important;
     width: 24px !important;
-}
-
-.mdc-fab,
-.mat-mdc-button-touch-target {
-    width: 30px !important;
-    min-width: 30px !important;
-    height: 30px !important;
-    padding: 0% !important;
-    background-color: transparent;
-    box-shadow: none !important;
-    text-align: center;
-}
-
-.mdc-fab .material-symbols-rounded {
-    font-size: 0.95rem !important;
-    line-height: 1.7 !important;
-    overflow: unset;
-    margin: 0 !important;
 }
 
 .btn-default-sm,
