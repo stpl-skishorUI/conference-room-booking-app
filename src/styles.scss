@@ -1,5 +1,388 @@
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: var(--default-font);
+    background-color: #EFEEEA;
+}
+
+:root {
+    --default-font: "Rubik", sans-serif !important;
+    --main-color: #FE7743;
+    --main-light-color: #fef1ec;
+    --main-dark-color: #cb5f35;
+    --bg-sidebar: #273F4F;
+}
+
+.text-blue {
+    color: var(--bs-blue) !important;
+}
+
+.bg-blue {
+    background-color: var(--bs-blue) !important;
+}
+
+.bg-blue-subtle {
+    background-color: rgba(13, 110, 253, 0.2) !important;
+}
+
+.text-indigo {
+    color: var(--bs-indigo) !important;
+}
+
+.bg-indigo {
+    background-color: var(--bs-indigo) !important;
+}
+
+.bg-indigo-subtle {
+    background-color: rgba(102, 16, 242, 0.2) !important;
+}
+
+.text-purple {
+    color: var(--bs-purple) !important;
+}
+
+.bg-purple {
+    background-color: var(--bs-purple) !important;
+}
+
+.bg-purple-subtle {
+    background-color: rgba(111, 66, 193, 0.2) !important;
+}
+
+.text-pink {
+    color: var(--bs-pink) !important;
+}
+
+.bg-pink {
+    background-color: var(--bs-pink) !important;
+}
+
+.bg-pink-subtle {
+    background-color: rgba(214, 51, 132, 0.2) !important;
+}
+
+.text-yellow {
+    color: var(--bs-yellow) !important;
+}
+
+.bg-yellow {
+    background-color: var(--bs-yellow) !important;
+}
+
+.bg-yellow-subtle {
+    background-color: rgba(255, 193, 7, 0.2) !important;
+}
+
+.text-teal {
+    color: var(--bs-teal) !important;
+}
+
+.bg-teal {
+    background-color: var(--bs-teal) !important;
+}
+
+.bg-teal-subtle {
+    background-color: rgba(32, 201, 151, 0.2) !important;
+}
+
+.text-cyan {
+    color: var(--bs-cyan) !important;
+}
+
+.bg-cyan {
+    background-color: var(--bs-cyan) !important;
+}
+
+.bg-cyan-subtle {
+    background-color: rgba(13, 202, 240, 0.2) !important;
+}
+
+// --bs-teal: #20c997;
+// --bs-cyan: #0dcaf0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+    font-family: var(--default-font);
+}
+
+.fs-60 {
+    font-size: 0.6rem !important;
+}
+
+.fs-65 {
+    font-size: 0.65rem !important;
+}
+
+.fs-70 {
+    font-size: 0.7rem !important;
+}
+
+.fs-75 {
+    font-size: 0.75rem !important;
+}
+
+.fs-80 {
+    font-size: 0.8rem !important;
+}
+
+.fs-main {
+    font-size: 0.85rem !important;
+}
+
+.fs-9 {
+    font-size: 0.9rem !important;
+}
+
+.fs-95 {
+    font-size: 0.95rem !important;
+}
+
+.fs-default {
+    font-size: 1rem !important;
+}
+
+
+.bg-main {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.bg-main-light {
+    background-color: var(--main-light-color);
+    color: var(--main-color);
+}
+
+.bg-main-dark {
+    background-color: var(--main-dark-color);
+    color: #fff;
+}
+
+a.text-main,
+.text-main {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+a.text-main:hover {
+    color: var(--main-dark-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-default,
+.btn-main,
+.btn-main-light,
+.btn-main-dark,
+.btn-main-outline {
+    font-size: 0.85rem !important;
+    font-family: var(--default-font) !important;
+    letter-spacing: 0px !important;
+    border-radius: 0.375rem !important;
+    font-weight: 600;
+    height: 36px !important;
+}
+
+.btn-main-outline.active,
+.btn-main-outline:hover,
+.btn-main {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+}
+
+.btn-main-light {
+    background-color: var(--main-light-color) !important;
+    color: var(--main-color) !important;
+}
+
+.btn-main-dark {
+    background-color: var(--main-dark-color) !important;
+    color: #fff !important;
+}
+
+.btn-main-outline {
+    color: var(--main-color) !important;
+    border: solid 1px var(--main-color) !important;
+    background-color: transparent !important;
+}
+
+.btn-main:hover {
+    background-color: var(--main-dark-color) !important;
+    color: #fff !important;
+}
+
+.btn-default,
+.btn-main,
+.btn-main-outline,
+.btn-main-light,
+.btn-main-dark {
+    display: flex;
+    align-items: center;
+}
+
+.btn-default .material-symbols-rounded,
+.btn-main .material-symbols-rounded,
+.btn-main-outline .material-symbols-rounded,
+.btn-main-light .material-symbols-rounded,
+.btn-main-dark .material-symbols-rounded {
+    font-size: 1.1rem;
+    height: 17px;
+}
+
+.btn-icon {
+    width: 36px !important;
+    min-width: 36px !important;
+    height: 36px !important;
+    padding: 0px !important;
+    background-color: var(--bs-light-bg-subtle);
+}
+
+.btn-icon .material-symbols-rounded {
+    font-size: 1.1rem !important;
+    line-height: 1.1 !important;
+    overflow: unset;
+    margin: 0 !important;
+}
+
+.btn-icon:hover {
+    width: 36px !important;
+    min-width: 36px !important;
+}
+
+.btn-icon-sm {
+    width: 30px !important;
+    min-width: 30px !important;
+    height: 30px !important;
+    padding: 7px !important;
+    // background-color: var(--bs-light-bg-subtle) !important;
+}
+
+.btn-icon-sm .material-symbols-rounded {
+    font-size: 0.95rem !important;
+    line-height: 1.2 !important;
+    overflow: unset;
+    margin: 0 !important;
+}
+
+.btn-default-sm .material-symbols-rounded {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+    overflow: unset;
+    margin-right: 5px !important;
+    width: 24px !important;
+}
+
+.mdc-fab,
+.mat-mdc-button-touch-target {
+    width: 30px !important;
+    min-width: 30px !important;
+    height: 30px !important;
+    padding: 0% !important;
+    background-color: transparent;
+    box-shadow: none !important;
+    text-align: center;
+}
+
+.mdc-fab .material-symbols-rounded {
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
+    overflow: unset;
+    margin: 0 !important;
+}
+
+.btn-default-sm,
+.btn-main-sm,
+.btn-main-light-sm,
+.btn-main-dark-sm,
+.btn-main-outline-sm {
+    font-size: 0.75rem !important;
+    font-family: var(--default-font) !important;
+    letter-spacing: 0px !important;
+    border-radius: 0.375rem !important;
+    font-weight: 600;
+    height: 30px !important;
+}
+
+.btn-main-outline-sm:hover,
+.btn-main-sm {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+}
+
+.btn-main-light-sm {
+    background-color: var(--main-light-color) !important;
+    color: var(--main-color) !important;
+}
+
+.btn-main-dark-sm {
+    background-color: var(--main-dark-color) !important;
+    color: #fff !important;
+}
+
+.btn-main-outline-sm {
+    color: var(--main-color) !important;
+    border: solid 1px var(--main-color) !important;
+    background-color: transparent;
+}
+
+.form-container .form-label {
+    font-family: var(--default-font) !important;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    color: #555;
+    letter-spacing: normal !important;
+}
+
+.form-container .form-data {
+    font-family: var(--default-font) !important;
+    font-size: 0.85rem;
+    margin: 0;
+    color: #151515;
+    font-weight: 600;
+    letter-spacing: normal !important;
+}
+
+.form-container .form-control {
+    font-family: var(--default-font) !important;
+    font-size: 0.8rem;
+    box-shadow: none;
+}
+
+.plain-card {
+    border: none;
+    box-shadow: none !important;
+    font-family: var(--default-font) !important;
+}
+
+.plain-card .card-header,
+.plain-card .card-header-control {
+    padding: 10px 15px;
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.plain-card .card-header-control .mat-mdc-form-field-subscript-wrapper {
+    display: none !important;
+}
+
+.plain-card .card-header {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.plain-card .card-body,
+.plain-card .card-footer {
+    padding: 10px 15px;
+}
+
+.plain-card .card-footer {
+    background-color: transparent;
+    border: none;
 }
 
 /* You can add global styles to this file, and also import other style files */
