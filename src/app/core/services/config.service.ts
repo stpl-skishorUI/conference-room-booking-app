@@ -10,7 +10,6 @@ export class ConfigService {
   //===========================================================Centralized API URLs=========================================================
   private apiUrls: any = {
     baseUrl: 'https://demogramsuvidhaapi.erpguru.in/',
-    // otp:'https://mahamahasul-api.mahamining.com/',
   };
 
 }
